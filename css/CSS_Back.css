@@ -32,4 +32,10 @@ body{
     background-color: #61642c;
 
   }
+@media (max-width: 600px){
+    h3{
+        font-size: 15px
+    }
+
+}
   
