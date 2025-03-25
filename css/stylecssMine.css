@@ -24,5 +24,13 @@ body {
         font-size: 30px;
         text-decoration: none;
       }
-    background-image: url(Back.png);    
+    background-image: url(Back.png);
+    
+    img{
+        transition: padding 0.2s ease-in-out;
+    }
+    img:hover{
+        padding: 5 5;
+    }
+    
 }
