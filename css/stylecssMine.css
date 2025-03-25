@@ -47,14 +47,6 @@ body {
         border:2px solid rgb(242, 242, 242);
 
     }
-
-    @media (max-width: 600px){
-        div#kvadrat_0{
-            visibility: hidden;
-            display: none;
-        }
-    
-    }
     
 
     .sticky {
