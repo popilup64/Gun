@@ -1,0 +1,35 @@
+body{
+    h2 {
+        text-align: left;
+        font-family: Arial;
+        }
+
+    h3 {
+        text-align: left;
+        font-family: Arial;
+        font-weight: 400;
+        }
+    h1 {
+        text-align: center;
+        font-family: Arial;
+    }
+    a {font-family: Arial;}
+    p {text-indent: 25px;}
+    background-color: rgb(234, 188, 132);
+    table {
+        background-color: rgb(213, 170, 117);
+    }
+}
+.button {
+    background-color: #717537;
+    color: rgb(5, 5, 5);
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .button:hover{
+    background-color: #61642c;
+
+  }
+  
