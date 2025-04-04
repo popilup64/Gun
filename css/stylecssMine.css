@@ -15,6 +15,9 @@ body {
         -webkit-text-stroke: 0.2px rgb(25, 83, 10);
     
     }
+    b#font-size {
+        font-size: 22px;
+    }
     a{
         color: #000;
         text-decoration: none;}
@@ -67,12 +70,12 @@ body {
     
     div#kvadrat_0 {
         width: 200px;
-        height: 190px;
+        height: 200px;
         border-radius: 8px;
         border: 2px solid;
         background-color: #717537;
         font-size: 20px;
-        font-family: Arial;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-left: 7px;
         
         }
