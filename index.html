@@ -1,226 +1,214 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Главная</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/stylecssMine.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
     </head>
-
     <body>
-        <h1 id="Автомат" class="chapter">Тактико-технические характеристики военного арсенала России</h1>
+        <h1 id="Автомат" class="chapter"><b>Тактико-технические характеристики военного арсенала России</b></h1>
 
-        <section class="sticky">
-        <div id="left"><div id="kvadrat_0"><b id="font-size">Каталог:</b>
-            <br>
-            <a id="ver" href="#Автомат" class="link">Автоматы</a><br>
-            <a id="ver" href="#Карабин" class="link">Карабин (СКС)</a><br>
-            <a id="ver" href="#Амфибия" class="link">Амфибия (АДС)</a><br>
-            <a id="ver" href="#Пулемет" class="link">Пулеметы</a><br>
-            <a id="ver" href="#Винтовка" class="link">Винтовки</a><br>
-            <a id="ver" href="#Пистолет" class="link">Пистолеты</a><br>
-            <a id="ver" href="#ПП" class="link">Пистолет-Пулемет</a><br>
-        </div></div>
-        </section>
+        <div class="dropdown sticky" id="left">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>Каталог</b>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="pd" id="ver" href="#Автомат" class="link">Автоматы</a></li>
+              <li><a class="pd" id="ver" href="#Карабин" class="link">Карабин (СКС)</a></a></li>
+              <li><a class="pd" id="ver" href="#Амфибия" class="link">Амфибия (АДС)</a></a></li>
+              <li><a class="pd" id="ver" href="#Пулемет" class="link">Пулеметы</a></a></li>
+              <li><a class="pd" id="ver" href="#Винтовка" class="link">Винтовки</a></a></li>
+              <li><a class="pd" id="ver" href="#Пистолет" class="link">Пистолеты</a></a></li>
+              <li><a class="pd" id="ver" href="#ПП" class="link">Пистолет-Пулемет</a></a></li>
+            </ul>
+          </div>
+          
 
-        <table border="1">
-            <tr>
-                <th>
-                    <a href="AK.html">
+        <div class="container text-center">
+            <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <td><a href="AK.html">
                         <img src="Фото/АК.jpg" alt ="AK">
                     </a>
-                    <h3>Автомат Калашникова</h3>
-                </th>
-                <th>
-                    <a href="СР-3 Вихрь.html">
-                        <img src="Фото/Вихрь.jpg">
+                    <p></p>
+                    <h3><b>Автомат Калашникова</b></h3></td>
+                    <td><a href="СР-3 Вихрь.html">
+                        <img src="Фото/Вихрь.jpg" alt ="Вихрь">
                     </a>
-                    <h3>CP-3 "Вихрь"</h3>
-                </th>
-                <th>
-                    <a href="АМБ-17.html">
-                        <img src="Фото/АМБ-17.jpg">
+                    <p></p>
+                    <h3><b>СР-3 «Вихрь»</b></h3></td>
+                    <td><a href="АМБ-17.html">
+                        <img src="Фото/АМБ-17.jpg" alt ="AМБ">
                     </a>
-                    <h3 id="Карабин">АМБ-17</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="ШАК-12.html">
-                        <img src="Фото/ШАК-12.jpg">
+                    <p></p>
+                    <h3><b id="Карабин">АМБ-17</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="ШАК-12.html">
+                        <img src="Фото/ШАК-12.jpg" alt ="ШАК-12">
                     </a>
-                    <h3 id="Амфибия">ШАК-12</h3>
-                </th>
-                <th>
-                    <a href="Вал.html">
-                        <img src="Фото/Вал.jpg">
+                    <p></p>
+                    <h3><b id="Амфибия">ШАК-12</b></h3></td>
+                    <td><a href="Вал.html">
+                        <img src="Фото/Вал.jpg" alt ="Вал">
                     </a>
-                    <h3>Вал</h3>
-                </th>
-                <th>
-                    <a href="СКС.html">
-                        <img src="Фото/СКС.jpg">
+                    <p></p>
+                    <h3><b>Вал</b></h3></td>
+                    <td><a href="СКС.html">
+                        <img src="Фото/СКС.jpg" alt ="СКС">
                     </a>
-                    <h3>СКС</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="АДС.html">
-                        <img src="Фото/АДС.jpg">
+                    <p></p>
+                    <h3><b>СКС</b></h3></td>
+
+                  <tr>
+                    <td><a href="АДС.html">
+                        <img src="Фото/АДС.jpg" alt ="AДС">
                     </a>
-                    <h3>АДС</h3>
-                </th>
-                <th>
-                    <a href="ПКМ.html">
-                        <img src="Фото/ПКМ .jpg">
+                    <p></p>
+                    <h3><b>АДС</b></h3></td>
+                    <td><a href="ПКМ.html">
+                        <img src="Фото/ПКМ .jpg" alt ="ПКМ">
                     </a>
-                    <h3 id="Пулемет">ПКМ</h3>
-                </th>
-                <th>
-                    <a href="РПК-16.html">
-                        <img src="Фото/РПК-16.jpg">
+                    <p></p>
+                    <h3><b id="Пулемет">ПКМ</b></h3></td>
+                    <td><a href="РПК-16.html">
+                        <img src="Фото/РПК-16.jpg" alt ="РПК-16">
                     </a>
-                    <h3>РПК-16</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="НСВ.html">
-                        <img src="Фото/НСВ.jpg">
+                    <p></p>
+                    <h3><b>РПК-16</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="НСВ.html">
+                        <img src="Фото/НСВ.jpg" alt ="НСВ">
                     </a>
-                    <h3>НСВ "Утес"</h3>
-                </th>
-                <th>
-                    <a href="Корд.html">
-                        <img src="Фото/Корд.jpg">
+                    <p></p>
+                    <h3><b>НСВ «Утес»</b></h3></td>
+                    <td><a href="Корд.html">
+                        <img src="Фото/Корд.jpg" alt ="Корд">
                     </a>
-                    <h3>Корд</h3>
-                </th>
-                <th>
-                    <a href="Печенег.html">
-                        <img src="Фото/Печенег.jpg">
+                    <p></p>
+                    <h3><b>Корд</b></h3></td>
+                    <td><a href="Печенег.html">
+                        <img src="Фото/Печенег.jpg" alt ="Печенег">
                     </a>
-                    <h3>Печенег</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="РПД.html">
-                        <img src="Фото/РПД.jpg">
+                    <p></p>
+                    <h3><b>Печенег</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="РПД.html">
+                        <img src="Фото/РПД.jpg" alt ="РПД">
                     </a>
-                    <h3>РПД</h3>
-                </th>
-                <th>
-                    <a href="ВСС Винторез.html">
-                        <img src="Фото/ВСС Винторез.jpg">
+                    <p></p>
+                    <h3><b>РПД</b></h3></td>
+                    <td><a href="ВСС Винторез.html">
+                        <img src="Фото/ВСС Винторез.jpg" alt ="ВСС">
                     </a>
-                    <h3 id="Винтовка">ВСС Винторез</h3>
-                </th>
-                <th>
-                    <a href="АСВК.html">
-                        <img src="Фото/АСВК.jpg">
+                    <p></p>
+                    <h3><b id="Винтовка">ВСС Винторез</b></h3></td>
+                    <td><a href="АСВК.html">
+                        <img src="Фото/АСВК.jpg" alt ="AСВК">
                     </a>
-                    <h3>АСВК</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="МЦ-116М.html">
-                        <img src="Фото/МЦ-116М.jpg">
+                    <p></p>
+                    <h3><b>АСВК</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="МЦ-116М.html">
+                        <img src="Фото/МЦ-116М.jpg" alt ="МЦ-116М">
                     </a>
-                    <h3>МЦ-116М</h3>
-                </th>
-                <th>
-                    <a href="СВД Драгунова.html">
-                        <img src="Фото/СВД Драгунова.jpg">
+                    <p></p>
+                    <h3><b>МЦ-116М</b></h3></td>
+                    <td><a href="СВД Драгунова.html">
+                        <img src="Фото/СВД Драгунова.jpg" alt ="СВД Драгунова">
                     </a>
-                    <h3>СВД Драгунова</h3>
-                </th>
-                <th>
-                    <a href="Мосин.html">
-                        <img src="Фото/Мосин–Наган.jpg">
+                    <p></p>
+                    <h3><b>СВД Драгунова</b></h3></td>
+                    <td><a href="Мосин.html">
+                        <img src="Фото/Мосин–Наган.jpg" alt ="Мосин">
                     </a>
-                    <h3>Мосин–Наган</h3>
-                </th>
-            </tr>
-            <tr> 
-                <th>
-                    <a href="Снайперская винтовка Лобаева.html">
-                        <img src="Фото/Снайперская винтовка Лобаева.jpg">
+                    <p></p>
+                    <h3><b>Мосин–Наган</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="Снайперская винтовка Лобаева.html">
+                        <img src="Фото/Снайперская винтовка Лобаева.jpg" alt ="СВ Лобаева">
                     </a>
-                    <h3>Снайперская винтовка Лобаева"</h3>
-                </th>
-                <th>
-                    <a href="Пистолет Ярыгина.html">
-                        <img src="Фото/Пистолет Ярыгина.jpg">
+                    <p></p>
+                    <h3><b>СВ Лобаева</b></h3></td>
+                    <td><a href="Пистолет Ярыгина.html">
+                        <img src="Фото/Пистолет Ярыгина.jpg" alt ="ПЯ">
                     </a>
-                    <h3 id="Пистолет">Пистолет Ярыгина</h3>
-                </th>
-                <th>
-                    <a href="ГШ-18.html">
-                        <img src="Фото/ГШ-18.jpg">
+                    <p></p>
+                    <h3><b id="Пистолет">Пистолет Ярыгина «Грач»</b></h3></td>
+                    <td><a href="ГШ-18.html">
+                        <img src="Фото/ГШ-18.jpg" alt ="ГШ-18">
                     </a>
-                    <h3>ГШ-18</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="ПМ.html">
-                        <img src="Фото/Пистолет Макарова.jpg">
+                    <p></p>
+                    <h3><b>ГШ-18</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="ПМ.html">
+                        <img src="Фото/Пистолет Макарова.jpg" alt ="ПМ">
                     </a>
-                    <h3>Пистолет Макарова</h3>
-                </th>
-                <th>
-                    <a href="ПТ.html">
-                        <img src="Фото/Пистолет Токарева.jpg">
+                    <p></p>
+                    <h3><b>Пистолет Макарова</b></h3></td>
+                    <td><a href="ПТ.html">
+                        <img src="Фото/Пистолет Токарева.jpg" alt ="ПТ">
                     </a>
-                    <h3>Пистолет Токарева</h3>
-                </th>
-                <th>
-                    <a href="ОТС-27.html">
-                        <img src="Фото/ОТС-27 Бердыш.jpg">
+                    <p></p>
+                    <h3><b>Пистолет Токарева</b></h3></td>
+                    <td><a href="ОТС-27.html">
+                        <img src="Фото/ОТС-27 Бердыш.jpg" alt ="ОТС-27">
                     </a>
-                    <h3>ОТС-27 "Бердыш"</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="ПЛ.html">
-                        <img src="Фото/Пистолет Лебедева.jpg">
+                    <p></p>
+                    <h3><b>ОТС-27 «Бердыш»</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="ПЛ.html">
+                        <img src="Фото/Пистолет Лебедева.jpg" alt ="ПЛ">
                     </a>
-                    <h3>Пистолет Лебедева</h3>
-                </th>
-                <th>
-                    <a href="Стечкин АПС.html">
-                        <img src="Фото/Стечкин АПС.jpg">
+                    <p></p>
+                    <h3><b>Пистолет Лебедева</b></h3></td>
+                    <td><a href="Стечкин АПС.html">
+                        <img src="Фото/Стечкин АПС.jpg" alt ="Стечкин">
                     </a>
-                    <h3>Стечкин АПС</h3>
-                </th>
-                <th>
-                    <a href="Бизон.html">
-                        <img src="Фото/ПП-19 Бизон.jpg">
+                    <p></p>
+                    <h3><b>Стечкин АПС</b></h3></td>
+                    <td><a href="Бизон.html">
+                        <img src="Фото/ПП-19 Бизон.jpg" alt ="Бизон">
                     </a>
-                    <h3 id="ПП">ПП-19 "Бизон"</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <a href="ПП-2000.html">
-                        <img src="Фото/ПП-2000.jpg">
+                    <p></p>
+                    <h3><b id="ПП">ПП-19 «Бизон»</b></h3></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="ПП-2000.html">
+                        <img src="Фото/ПП-2000.jpg" alt ="ПП-2000">
                     </a>
-                    <h3>ПП-2000</h3>
-                </th>
-                <th>
-                    <a href="АЕК-919К.html">
-                        <img src="Фото/АЕК-919К.jpg">
+                    <p></p>
+                    <h3><b>ПП-2000</b></h3></td>
+                    <td><a href="АЕК-919К.html">
+                        <img src="Фото/АЕК-919К.jpg" alt ="АЕК-919К">
                     </a>
-                    <h3>АЕК-919К "Каштан"</h3>
-                </th>
-                <th>
-                    <a href="OTs-02 Кипарис.html">
-                        <img src="Фото/OTs-02 Кипарис.jpg">
+                    <p></p>
+                    <h3><b>АЕК-919К «Каштан»</b></h3></td>
+                    <td><a href="OTs-02 Кипарис.html">
+                        <img src="Фото/OTs-02 Кипарис.jpg" alt ="Кипарис">
                     </a>
-                    <h3>ОЦ-02 "Кипарис"</h3>
-                </th>
-            </tr>
-        </table>
+                    <p></p>
+                    <h3><b>ОЦ-02 «Кипарис»</b></h3></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
     </body>
 </html>
