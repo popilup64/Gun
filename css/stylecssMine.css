@@ -86,7 +86,7 @@ html {
     position: sticky;
     top: 0;
     }
-    
+
 
     #left{
 		width: 0%;
@@ -103,4 +103,18 @@ html {
     .btn-secondary {
         --bs-btn-color: #000000;
         --bs-btn-bg: #57592a;}
+    
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 0rem;}
+
+    
+    .btn-primary { 
+        --bs-btn-bg: #717537;
+        --bs-btn-hover-bg: #57592a;
+        --bs-btn-border-color: none;
+        --bs-btn-color: #000000;
+        font-weight: 550;
+        --bs-btn-active-bg: #1c7714;
+        }
 

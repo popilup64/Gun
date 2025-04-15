@@ -10,6 +10,71 @@
     <body>
         <h1 id="Автомат" class="chapter"><b>Тактико-технические характеристики военного арсенала России</b></h1>
 
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand"></a>
+              <form class="d-flex" role="search" onsubmit="return false;">
+                <input id="weaponSearch" class="form-control me-2" type="search" 
+                       placeholder="Поиск по названию оружия..." aria-label="Search">
+                <button class="btn btn-primary" type="button" onclick="findWeapon()">Поиск</button>
+              </form>
+            </div>
+          </nav>
+          
+          <script>
+          function findWeapon() {
+            const searchTerm = document.getElementById('weaponSearch').value.toLowerCase().trim();
+            if (!searchTerm) return;
+            
+            const weaponElements = document.querySelectorAll('h3 b');
+            let found = false;
+            
+            weaponElements.forEach(el => {
+              const weaponName = el.textContent.toLowerCase();
+              if (weaponName.includes(searchTerm)) {
+                // Прокручиваем к элементу
+                el.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'center'
+                });
+                
+                // Подсвечиваем найденный элемент
+                const originalHtml = el.innerHTML;
+                el.innerHTML = originalHtml.replace(
+                  new RegExp(searchTerm, 'gi'), 
+                  match => `<span class="highlight">${match}</span>`
+                );
+                
+                // Восстанавливаем оригинальный текст через 3 секунды
+                setTimeout(() => {
+                  el.innerHTML = originalHtml;
+                }, 3000);
+                
+                found = true;
+              }
+            });
+            
+            if (!found) {
+              alert('Оружие с таким названием не найдено');
+            }
+          }
+          
+          // Добавляем обработчик для поиска при нажатии Enter
+          document.getElementById('weaponSearch').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+              findWeapon();
+            }
+          });
+          </script>
+          
+          <style>
+          .highlight {
+            background-color: yellow;
+            padding: 2px;
+            border-radius: 3px;
+          }
+          </style>
+
         <div class="dropdown sticky" id="left">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <b>Каталог</b>
