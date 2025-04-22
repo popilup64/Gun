@@ -1,4 +1,4 @@
-body{
+
     h2 {
         text-align: left;
         font-family: Arial;
@@ -15,11 +15,11 @@ body{
     }
     a {font-family: Arial;}
     p {text-indent: 25px;}
-    background-color: rgb(234, 188, 132);
+    body {background-color: rgb(234, 188, 132);}
+    
     table {
         background-color: rgb(213, 170, 117);
     }
-}
 .button {
     background-color: #717537;
     color: rgb(5, 5, 5);
@@ -40,4 +40,31 @@ body{
     }
 
 }
+
+.form-control {
+    width: 100%;}
+body {
+    margin: 5px;
+}
+
+.btn-primary { 
+    --bs-btn-bg: #717537;
+    --bs-btn-hover-bg: #57592a;
+    --bs-btn-border-color: none;
+    --bs-btn-color: #000000;
+    font-weight: 550;
+    --bs-btn-active-bg: #1c7714;
+    }
+.text-center {
+        text-align: left !important;}
+.Fon{
+    background-image:url(Otkliks.png) ;
+    }  
+    
+    .alert-primary {
+        --bs-alert-color: #000000;
+        --bs-alert-bg: #edf4fe;
+        --bs-alert-border-color: #000000;
+        --bs-alert-link-color: #f9fbff;
+    }
   

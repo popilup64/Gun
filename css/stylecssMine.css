@@ -86,6 +86,10 @@ html {
     position: sticky;
     top: 0;
     }
+    .sticky_r {
+        position: sticky;
+        float: right;
+    }
 
 
     #left{
@@ -118,3 +122,16 @@ html {
         --bs-btn-active-bg: #1c7714;
         }
 
+    .alert-primary {
+        --bs-alert-color: #000000;
+        --bs-alert-bg: #717537;
+        --bs-alert-border-color: #000000;}   
+    .alert {
+        font-size: 30px;
+        text-align: center;
+        --bs-alert-margin-bottom: none;
+        border-radius: 0px;
+        border: 2px solid;
+        --bs-alert-padding-y: 0.8rem;
+
+       }
