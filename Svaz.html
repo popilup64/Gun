@@ -17,10 +17,10 @@
 
           </div>
           <div class="col">
-            <div class="alert alert-primary" role="alert">
+            <div class="alert alert-primary shadow" role="alert">
                 <h1><b>Обратная связь</b></h1>
-              </div>
-            <div class="alert alert-primary" role="alert">
+            </div>
+            <div class="alert alert-primary shadow" role="alert">
             <h4>Имя:</h4>
     <div class="mb-3">
         <input type="text" class="form-control" id="nameInput" placeholder="Ввод...">
@@ -62,7 +62,7 @@
                 alert("Заполните поле 'Комментарий'!");
                 return;
             }
-
+            console.log('Отправленные данныые:', nameInput.value, "," , emailInput.value, "," , commentInput.value);
             alert("Форма успешно отправлена! Добро пожаловать," + " " +nameInput.value); // Если все поля заполнены
         });
     </script>

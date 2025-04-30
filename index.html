@@ -24,6 +24,7 @@
           </nav>
           
           <script>
+          "use strict"
           function findWeapon() {
             const searchTerm = document.getElementById('weaponSearch').value.toLowerCase().trim();
             if (!searchTerm) return;
@@ -50,7 +51,7 @@
                 // Восстанавливаем оригинальный текст через 3 секунды
                 setTimeout(() => {
                   el.innerHTML = originalHtml;
-                }, 3000);
+                }, 5000);
                 
                 found = true;
               }
@@ -73,7 +74,7 @@
           .highlight {
             background-color: rgb(52, 84, 190);
             padding: 2px;
-            border-radius: 3px;
+            border-radius: 2px;
           }
           </style>
 
