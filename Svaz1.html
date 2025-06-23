@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Связаться с нами</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/CSS_Back.css">
+        <link rel="icon" href="Фото/Icon.icon" type="image/x-icon">   
+    </head>
+    <body class="Fon">
+    <a href="index.html" class="button">Вернуться обратно:</a>
+    <p></p>
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+
+          </div>
+          <div class="col">
+            <div class="alert alert-primary shadow" role="alert">
+                <h1><b>Обратная связь</b></h1>
+            </div>
+            <div class="alert alert-primary shadow" role="alert">
+            <h4>Имя:</h4>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="nameInput" placeholder="Ввод...">
+      </div>
+    <h4>Почта:</h4>
+    <div class="mb-3">
+        <input id="emailInput" type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+    </div>
+    <h4>Комментарий:</h4>
+    <div class="mb-3">
+        <textarea class="form-control" id="commentInput" rows="3" placeholder="Ввод..."></textarea>
+    </div>
+    <button id="submitButton" type="button" class="btn btn-primary">Отправить</button>
+
+    <script>
+        "use strict";
+        document.getElementById("submitButton").addEventListener("click", function() {
+    const nameInput = document.getElementById("nameInput");
+    const emailInput = document.getElementById("emailInput");
+    const commentInput = document.getElementById("commentInput");
+    const successAlert = document.getElementById("successAlert");
+    const userNameSpan = document.getElementById("userName");
+
+    // Сбрасываем уведомление (если было показано ранее)
+    successAlert.classList.add("d-none");
+
+    if (nameInput.value.trim() === "") {
+        alert("Заполните поле 'Имя'!");
+        return;
+    }
+
+    if (emailInput.value.trim() === "") {
+        alert("Заполните поле 'Почта'!");
+        return;
+    }
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(emailInput.value.trim())) {
+        alert("Введите корректный email (например: example@mail.com)");
+        emailInput.focus();
+        return;
+    }
+
+    if (commentInput.value.trim() === "") {
+        alert("Заполните поле 'Комментарий'!");
+        return;
+    }
+
+    console.log('Отправленные данные:', nameInput.value, ",", emailInput.value, ",", commentInput.value);
+    
+    // Показываем уведомление и подставляем имя
+    userNameSpan.textContent = nameInput.value.trim();
+    successAlert.classList.remove("d-none");
+
+    // Прокрутка к уведомлению (опционально)
+    successAlert.scrollIntoView({ behavior: "smooth" });
+});
+    </script>
+    </div>
+    <div class="alert alert-success d-none" role="alert" id="successAlert">
+        <b>Ваша форма успешно заполнена!</b><p></p>
+        Спасибо за оставленный отзыв! Добро пожаловать, <span id="userName"></span>
+    </div>
+          </div>
+          <div class="col">
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

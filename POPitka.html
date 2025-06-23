@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="POPitka.html">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Оставьте отзыв</h1>
+        <form id="feedbackForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+
+    fetch('/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, message })
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('responseMessage').textContent = data;
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
+        document.getElementById('responseMessage').textContent = 'Произошла ошибка при отправке.';
+    });
+});
+    </script>
+</body>
+</html>

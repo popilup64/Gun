@@ -135,3 +135,10 @@ html {
         --bs-alert-padding-y: 0.8rem;
 
        }
+       .gap-2 {
+        gap: 0rem !important;
+        }
+        .icon-link {
+        justify-content: center;
+        }
+
