@@ -36,7 +36,7 @@ input, textarea {
 }
 
 button {
-    width: 106%;
+    width: 100%;
     padding: 10px;
     background-color: #717537;
     color: rgb(0, 0, 0);
@@ -67,8 +67,16 @@ button:hover {
             font-size: 14px;
             transition: all 0.3s ease;
         }
+        .form-container {
+        width: 27%;
+        }
         
         .back-button:hover {
             background-color: #595d2b;
         }
-        body{background-image: url(Otkliks.png);}
+        body{background-image: url(Otkliks.png);
+            font-family: Arial, sans-serif; /* или любой другой предпочитаемый шрифт */
+}
+
+        
+        
